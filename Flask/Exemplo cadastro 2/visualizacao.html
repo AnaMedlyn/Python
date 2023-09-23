@@ -1,0 +1,30 @@
+<html>
+
+
+
+<body>
+
+<h1>Pessoas cadastradas</h1>
+
+<table>
+	<tr>
+		<th>CPF</th>
+		<th>Nome</th>
+		<th>Sobrenome</th>
+		<th>Sexo</th>
+		<th>Senha</th>
+	</tr>
+	{% for pessoa in pessoas %}
+	<tr>
+		<td>{{pessoa.cpf}}</td>
+		<td>{{pessoa.nome}}</td>
+		<td>{{pessoa.sobrenome}}</td>
+		<td>{{pessoa.sexo}}</td>
+		<td>{{pessoa.senha}}</td>
+	</tr>
+	{% endfor %}
+</table>
+
+</body>
+
+</html>
